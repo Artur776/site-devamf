@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - AMF Tecnologias</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="container">
+            <div class="logo-container">
+                <a href="index.html" class="logo">
+                    <span class="highlight">AMF</span> Tecnologias
+                </a>
+            </div>
+            
+            <button class="login-btn">Cadastro</button> <!-- Botão de Login -->
+            <div class="mobile-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Conteúdo da Página Inicial -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        Bem-vindo à <span class="gradient-text">AMF Tecnologias</span>
+                    </h1>
+                    <p class="hero-description">
+                        Soluções tecnológicas inovadoras para o seu negócio.
+                    </p>
+                    <p class="hero-description">
+                     crie sua conta para obter mais beneficios sobre os nossos serviços e tenha acesso directo com os nossos tecnicos de forma facilitada
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal de Login -->
+    <div class="login-modal" id="loginModal">
+        <div class="login-modal-content">
+            <span class="close-modal" id="closeModal">&times;</span>
+            <h2 class="modal-title">Cadastro</h2>
+            <form class="login-form">
+              <div class="form-group">
+                <input type="text" name="nome" placeholder="Seu nome">
+              </div>
+                <div class="form-group">
+                    <input type="email" name="email" placeholder="Seu E-mail" required>
+                </div>
+                <div class="form-group">
+                    <input type="password" name="password" placeholder="Sua Senha" required>
+                </div>
+                <div class="form-group">
+                  <input type="repeatpassaword" name="repeatpassaword" placeholder="Repita sua senha" required>
+                </div>
+                <button type="submit" class="primary-btn">Cadastrar</button>
+            </form>
+            <p class="modal-footer">
+                Já tem uma conta? <a href="index.html">Login</a>
+            </p>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script>
+        // Seleciona os elementos do modal
+        const loginModal = document.getElementById("loginModal");
+        const loginBtn = document.querySelector(".login-btn");
+        const closeModal = document.getElementById("closeModal");
+
+        // Abre o modal quando o botão de login é clicado
+        loginBtn.addEventListener("click", () => {
+            loginModal.classList.add("active");
+        });
+
+        // Fecha o modal quando o botão de fechar é clicado
+        closeModal.addEventListener("click", () => {
+            loginModal.classList.remove("active");
+        });
+
+        // Fecha o modal quando o usuário clica fora do modal
+        window.addEventListener("click", (event) => {
+            if (event.target === loginModal) {
+                loginModal.classList.remove("active");
+            }
+        });
+    </script>
+</body>
+</html>

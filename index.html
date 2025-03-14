@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevAMF - Soluções Tecnológicas do Futuro</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="grid-overlay"></div>
+    
+    <!-- Header & Navigation -->
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo-container">
+                    <a href="#" class="logo">Dev<span class="highlight">AMF</span></a>
+                </div>
+                
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="servicos.html">Serviços</a></li>
+                    <li><a href="tutoriais.html">Tutoriais</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="contatos.html">Contato</a></li>
+                </ul>
+                
+                <!-- Botão de Login -->
+                <button class="login-btn" id="openLoginModal">
+                    <i class="fas fa-user-circle"></i>
+                    Login
+                </button>
+                <div class="mobile-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- Mobile Navigation -->
+    <div class="mobile-nav">
+        <button class="close-nav">
+            <i class="fas fa-times"></i>
+        </button>
+        
+        <ul class="mobile-nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="servicos.html">Serviços</a></li>
+            <li><a href="tutoriais.html">Tutoriais</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="contatos.html">Contato</a></li>
+        </ul>
+        
+        <button class="mobile-login-btn">
+            <i class="fas fa-user-circle"></i>
+            Login
+        </button>
+    </div>
+    
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="floating-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+        </div>
+        
+        <div class="glowing-circles">
+            <div class="circle circle-1"></div>
+            <div class="circle circle-2"></div>
+            <div class="circle circle-3"></div>
+        </div>
+        
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <div class="hero-subtitle">Inovação & Tecnologia</div>
+                    <h1 class="hero-title">O FUTURO DAS<br>SOLUÇÕES <span class="gradient-text">TECNOLÓGICAS</span></h1>
+                    <p class="hero-description">Transformamos ideias em realidade através da tecnologia de ponta. Na DevAMF, dominamos o presente e conquistamos o futuro com soluções inovadoras que impulsionam seu negócio para novos patamares.</p>
+                    
+                    <div class="hero-cta">
+                        <button class="primaria-btn">Nossos Serviços</button>
+                        <button class="secondary-btn">Fale Conosco</button>
+                    </div>
+                    
+                    <div class="tech-pills">
+                        <div class="tech-pill"><i class="fas fa-code"></i> Desenvolvimento Web</div>
+                        <div class="tech-pill"><i class="fas fa-mobile-alt"></i> Apps Mobile</div>
+                        <div class="tech-pill"><i class="fas fa-robot"></i> Inteligência Artificial</div>
+                        <div class="tech-pill"><i class="fas fa-python"></i>Python Dev</div>
+                        <div class="tech-pill"><i class="fas fa-database"></i> Big Data</div>
+                    </div>
+                </div>
+                
+                <div class="hero-image">
+                    <div class="hero-image-inner">
+                        <img src="logo.png" alt="Tecnologia Futurista" class="hero-image-content">
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="scroll-indicator">
+            <i class="fas fa-chevron-down"></i>
+            <span>Explore</span>
+        </div>
+    </section>
+    
+    <!-- Stats Section -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="stats-container">
+                <div class="stat-item">
+                    <div class="stat-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <div class="stat-number">150+</div>
+                    <div class="stat-label">Projetos Concluídos</div>
+                </div>
+                
+                <div class="stat-item">
+                    <div class="stat-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="stat-number">98%</div>
+                    <div class="stat-label">Clientes Satisfeitos</div>
+                </div>
+                
+                <div class="stat-item">
+                    <div class="stat-icon">
+                        <i class="fas fa-code-branch"></i>
+                    </div>
+                    <div class="stat-number">15+</div>
+                    <div class="stat-label">Tecnologias Dominadas</div>
+                </div>
+                
+                <div class="stat-item">
+                    <div class="stat-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <div class="stat-number">12</div>
+                    <div class="stat-label">Países Atendidos</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal de Login -->
+<div class="login-modal" id="loginModal">
+    <div class="login-modal-content">
+        <span class="close-modal" id="closeLoginModal">&times;</span>
+        <h2 class="modal-title">Login</h2>
+        <form class="login-form" id="loginForm">
+            <div class="form-group">
+                <input type="email" id="email" name="email" placeholder="Seu E-mail" required>
+            </div>
+            <div class="form-group">
+                <input type="password" id="password" name="password" placeholder="Sua Senha" required>
+            </div>
+            <button type="submit" class="primary-btn">Entrar</button> 
+        </form>
+
+
+
+        <p class="modal-footer">
+            Não tem uma conta? <a href="#" id="openSignupFromLogin">Cadastre-se</a>
+        </p>
+    </div>
+</div>
+
+<script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js";
+    import { getAuth, signInWithEmailAndPassword, signInWithPopup, signInWithPhoneNumber, FacebookAuthProvider, RecaptchaVerifier } from "https://www.gstatic.com/firebasejs/9.6.1/firebase-auth.js";
+    
+    const firebaseConfig = {
+        apiKey: "SUA-API-KEY",
+        authDomain: "SEU-PROJETO.firebaseapp.com",
+        projectId: "SEU-PROJETO",
+        storageBucket: "SEU-PROJETO.appspot.com",
+        messagingSenderId: "SEU-ID",
+        appId: "SUA-APP-ID"
+    };
+
+    const app = initializeApp(firebaseConfig);
+    const auth = getAuth();
+    const provider = new FacebookAuthProvider();
+
+    // Login com Email e Senha
+    document.getElementById("loginForm").addEventListener("submit", function(event) {
+        event.preventDefault();
+        const email = document.getElementById("email").value;
+        const password = document.getElementById("password").value;
+        
+        signInWithEmailAndPassword(auth, email, password)
+            .then(userCredential => {
+                alert("Login bem-sucedido!");
+            })
+            .catch(error => {
+                alert("Erro: " + error.message);
+            });
+    });
+
+    // Login com Facebook
+    document.getElementById("facebookLogin").addEventListener("click", function() {
+        signInWithPopup(auth, provider)
+            .then(result => {
+                alert("Login com Facebook bem-sucedido!");
+            })
+            .catch(error => {
+                alert("Erro: " + error.message);
+            });
+    });
+
+    // Login com Telefone
+    window.recaptchaVerifier = new RecaptchaVerifier(auth, "recaptcha-container", {
+        'size': 'invisible',
+    });
+    
+    document.getElementById("phoneLogin").addEventListener("click", function() {
+        const phoneNumber = prompt("Digite seu número de telefone com código do país:");
+        signInWithPhoneNumber(auth, phoneNumber, window.recaptchaVerifier)
+            .then(confirmationResult => {
+                const code = prompt("Digite o código enviado por SMS:");
+                return confirmationResult.confirm(code);
+            })
+            .then(result => {
+                alert("Login com telefone bem-sucedido!");
+            })
+            .catch(error => {
+                alert("Erro: " + error.message);
+            });
+    });
+</script>
+
+
+    <!-- Scripts -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script>
+        // Seleciona os elementos dos modais
+        const loginModal = document.getElementById("loginModal");
+        const openLoginModalBtn = document.getElementById("openLoginModal");
+        const closeLoginModalBtn = document.getElementById("closeLoginModal");
+        const openLoginFromSignup = document.getElementById("openLoginFromSignup");
+
+        // Abre o modal de login quando o botão de login é clicado
+        openLoginModalBtn.addEventListener("click", () => {
+            loginModal.classList.add("active");
+        });
+
+        // Fecha o modal de login quando o botão de fechar é clicado
+        closeLoginModalBtn.addEventListener("click", () => {
+            loginModal.classList.remove("active");
+        });
+
+        // Fecha o modal de login quando o usuário clica fora do modal
+        window.addEventListener("click", (event) => {
+            if (event.target === loginModal) {
+                loginModal.classList.remove("active");
+            }
+        });
+
+        // Abre o modal de login quando o link "Faça login" é clicado no modal de cadastro
+        openLoginFromSignup.addEventListener("click", (e) => {
+            e.preventDefault();
+            signupModal.classList.remove("active");
+            loginModal.classList.add("active");
+        });
+
+        // Mobile Navigation Toggle
+        const mobileToggle = document.querySelector('.mobile-toggle');
+        const mobileNav = document.querySelector('.mobile-nav');
+        const closeNav = document.querySelector('.close-nav');
+        
+        mobileToggle.addEventListener('click', () => {
+            mobileNav.classList.add('active');
+        });
+        
+        closeNav.addEventListener('click', () => {
+            mobileNav.classList.remove('active');
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre - AMF Tecnologias</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="container">
+            <div class="logo-container">
+                <a href="index.html" class="logo">
+                    <span class="highlight">AMF</span> Tecnologias
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="servicos.html">Serviços</a></li>
+                <li><a href="tutoriais.html">Tutoriais</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="contatos.html">Contato</a></li>
+            </ul>
+            <button class="login-btn">Login</button>
+            <div class="mobile-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        Sobre <span class="gradient-text">Nós</span>
+                    </h1>
+                    <p class="hero-description">
+                        Conheça mais sobre a AMF Tecnologias, nossa missão, visão e valores.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="floating-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+        </div>
+        <div class="glowing-circles">
+            <div class="circle circle-1"></div>
+            <div class="circle circle-2"></div>
+            <div class="circle circle-3"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="nos.png" alt="Sobre Nós">
+                </div>
+                <div class="about-text">
+                    <h2 class="section-title">Quem Somos</h2>
+                    <p class="about-description">
+                        A AMF Tecnologias é uma empresa especializada em soluções tecnológicas inovadoras, focada em ajudar empresas a alcançarem seus objetivos através da tecnologia. Nossa equipe é composta por profissionais altamente qualificados e apaixonados por inovação.
+                    </p>
+                    <h3 class="about-subtitle">Nossa Missão</h3>
+                    <p class="about-description">
+                        Nossa missão é fornecer soluções tecnológicas de alta qualidade que impulsionem o crescimento e a eficiência dos nossos clientes.
+                    </p>
+                    <h3 class="about-subtitle">Nossa Visão</h3>
+                    <p class="about-description">
+                        Queremos ser reconhecidos como líderes em inovação tecnológica, oferecendo soluções que transformam negócios e melhoram a vida das pessoas.
+                    </p>
+                    <h3 class="about-subtitle">Nossos Valores</h3>
+                    <ul class="about-values">
+                        <li><i class="fas fa-check"></i> Inovação</li>
+                        <li><i class="fas fa-check"></i> Qualidade</li>
+                        <li><i class="fas fa-check"></i> Transparência</li>
+                        <li><i class="fas fa-check"></i> Compromisso com o cliente</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 AMF Tecnologias. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script>
+        // Mobile Navigation Toggle
+        const mobileToggle = document.querySelector('.mobile-toggle');
+        const mobileNav = document.querySelector('.mobile-nav');
+        const closeNav = document.querySelector('.close-nav');
+
+        mobileToggle.addEventListener('click', () => {
+            mobileNav.classList.add('active');
+        });
+
+        closeNav.addEventListener('click', () => {
+            mobileNav.classList.remove('active');
+        });
+    </script>
+</body>
+</html>
